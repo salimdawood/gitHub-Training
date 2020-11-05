@@ -1,0 +1,411 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background: #393e46;
+}
+.title {
+    width: 100vw;
+    height: auto;
+}
+.title .web-name {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+}
+.title .web-about {
+    height: auto;
+    width: 60%;
+    margin:auto;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+}
+.choices-btns {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+.choices-btns > button {
+    width: 15%;
+    height: 100%;
+    border: 2px solid black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    background-color: white;
+    cursor:pointer;
+    outline:none; 
+}
+button:hover, div > button:hover, .color-link > div:first-child > button:hover {
+    color: white;
+    background-color: #00adb5;
+    border-color: #00adb5;
+}
+.link-box {
+    width:100%;
+    margin-top:3%;
+    height:50vh;
+    background-color:white;
+    border:2px solid black;
+    display:none;
+}
+.link-box > div { 
+    width:100%;
+    height:100%;
+}
+
+.color-link{
+    display:none;
+}
+.color-link > div:first-child {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    flex:2;
+}
+.color-link > div:first-child > div:first-child {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    width: 100%;
+    height: auto;
+}
+.color-link > div:first-child > div:nth-child(2) {
+    color: black;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+}
+.color-link  button {
+    height:auto;
+    width:auto;
+    padding:2%;
+    margin:auto;
+    border: 2px solid black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: white;
+    cursor:pointer;
+    outline:none;
+}
+.color-link > div:nth-child(2) {
+    flex:2;
+    background-image: url("../img/color.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.color-link > div:first-child > div:nth-child(4) {
+    font-weight:500;
+}
+
+.icon-link {
+    display: none;
+}
+.icon-link > div {
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+.icon-link  button {
+    height:50%;
+    width:70%;
+    padding:2%;
+    border: 2px solid black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: white;
+    cursor:pointer;
+    outline:none; 
+}
+.icon-link > div > div {
+    flex:1;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.icon-link img,
+.icon-link svg{
+    flex: 1;
+}
+.icon-link img,
+.icon-link svg {
+    width:20%;
+    height:20%;
+}
+.icon-link img:hover,
+.icon-link svg:hover {
+    transform:scale(1.5);
+    transition:all 0.4s ease;
+}
+
+.svg-link{
+    display:none;
+    flex-direction:column;
+}
+.svg-link > div:last-child {
+    width:100%;
+    height:30%;
+    display:flex;
+}
+.svg-link > div:first-child {
+    width:100%;
+    height:50%;
+    margin-top:5%;
+    display:flex;
+}
+.svg-link > div:last-child > div {
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.svg-link button{
+    height:70%;
+    width:50%;
+    margin:auto;
+    font-size:30px;
+    border: 2px solid black;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    background-color: white;
+    cursor:pointer;
+    outline:none; 
+}
+.svg-link img{
+    flex:1;
+}
+.svg-link img{
+    width:20%;
+    height:80%;
+}
+.svg-link img:hover {
+    transform:scale(0.8);
+    transition:all 0.4s ease;
+}
+
+.media-link{
+    display:none;
+}
+.media-link > div:first-child {
+    flex:1;
+    background-image:url("../img/pexels.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+
+}
+.media-link > div:last-child {
+    flex:1;
+    background-image:url("../img/unsplash.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display:flex;
+    flex-direction:column;
+}
+.media-link > div > div{
+    flex:1;
+    text-align:center;
+}
+.pexels-btn {
+    height: 30%;
+    width: 40%;
+    font-size: 30px;
+    border: 2px solid black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+}
+.unsplash-btn {
+    height: 30%;
+    width: 40%;
+    font-size: 30px;
+    border: 2px solid black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    outline: none;
+}
+.pexels-txt {
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+}
+.unsplash-txt {
+    font-weight: 400;
+    font-size: 30px;
+}
+.media-link > div:hover {
+    filter: contrast(150%);
+}
+
+
+
+@media(max-width:1100px) {
+    .unsplash-btn{
+        font-size:20px;
+    }
+}
+@media(max-width:900px) {
+    .title .web-name {
+        font-size: 60px;
+    }
+    .choices-btns > button {
+        font-size: 25px;
+    }
+    .color-link > div:first-child > div:first-child {
+        font-size: 25px;
+    }
+    .color-link > div:first-child > div:nth-child(4) {
+        font-size: 25px;
+    }
+    .color-link > div:first-child > div:nth-child(2) {
+        font-size: 10px;
+    }
+    .icon-link button {
+        font-size: 16px;
+    }
+    .pexels-btn {
+        font-size: 20px;
+    }
+    .unsplash-btn {
+        font-size: 15px;
+    }
+
+
+}
+@media(max-width:600px) {
+    .title .web-name {
+        font-size: 40px;
+    }
+    .choices-btns > button {
+        font-size: 20px;
+    }
+    .color-link > div:last-child {
+    background-position: right;
+    }
+    .color-link > div:first-child > div:first-child {
+        font-size: 15px;
+    }
+    .color-link > div:first-child > div:nth-child(4) {
+        font-size: 15px;
+    }
+    .icon-link button {
+        font-size: 13px;
+    }
+    .svg-link button {
+        font-size: 22px;
+    }
+    .pexels-btn {
+        font-size: 15px;
+    }
+    .unsplash-btn {
+        font-size: 12px;
+    }
+}
+@media(max-width:450px) {
+    .title .web-name {
+        font-size: 35px;
+    }
+    .title .web-about {
+        font-size: 12px;
+    }
+    .choices-btns {
+        height: auto;
+        width: 30%;
+        margin: 2% auto 0;
+        flex-direction: column;
+    }
+    .choices-btns > button {
+        width: 100%;
+        margin-top: 10%;
+    }
+    .link-box{
+        height:40vh;
+    }
+    .color-link > div:first-child > div:first-child {
+        font-size: 12px;
+    }
+    .color-link > div:first-child > div:nth-child(4) {
+        font-size: 12px;
+    }
+    .svg-link img {
+        width: 20%;
+        height: 80%;
+    }
+    .svg-link button {
+        font-size: 20px;
+    }
+    .unsplash-btn {
+        font-size: 8px;
+    }
+    .pexels-btn {
+        font-size: 12px;
+    }
+
+}
+@media(max-width:320px){
+    .title .web-name {
+        font-size: 25px;
+    }
+    .color-link > div:first-child > div:nth-child(4) {
+        font-size: 9px;
+    }
+    .title .web-about {
+        font-size: 10px;
+    }
+    .icon-link img,
+    .icon-link svg {
+        width: 15%;
+        height: 15%;
+    }
+    .icon-link button {
+        font-size: 10px;
+    }
+    .svg-link button {
+        font-size: 15px;
+    }
+}
+@media(max-width:250px) {
+    .choices-btns > button {
+        font-size: 15px;
+    }
+    .svg-link  button {
+        font-size: 12px;
+    }
+}
